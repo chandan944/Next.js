@@ -1,9 +1,10 @@
 import React from 'react'
 interface Props{
-    params:string;
+    params:{
+     orderId: string;}
 }
 
-const Orderd = ({params}) => {
+const Orderd = ({params}:Props) => {
   return (
     <main>Order {params.orderId}</main>
   )
